@@ -1,0 +1,119 @@
+.login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #d9e2d5;
+}
+
+.login-container {
+    display: flex;
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-formulario {
+    width: 100%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-formulario h2 {
+    align-self: center;
+    color: #4a5d23;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.login-subtitulo {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #333;
+}
+
+.campo input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #4a5d23;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.opcoes-login label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.opcoes-login a {
+    color: #4a5d23;
+    text-decoration: none;
+}
+
+.opcoes-login a:hover {
+    text-decoration: underline;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a5d23;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-login:hover {
+    background-color: #8daa81;
+}
+
+/* Cadastro */
+
+.cadastro {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+.cadastro a {
+    margin-left: 5px;
+    color: #4a5d23;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
