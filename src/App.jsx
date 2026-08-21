@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
@@ -16,6 +15,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
 
