@@ -1,7 +1,42 @@
-import { Link } from "react-router";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router";
+import api from "../services/api";
+
 import "./Login.css";
 
 function Login() {
+
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const navigate = useNavigate();
+
+    async function handleLogin(event) {
+
+        event.preventDefault();
+
+        try {
+
+            const response = await api.post("/usuarios/login", {
+                email: email,
+                senha: senha
+            });
+
+            console.log(response.data);
+
+            alert("Login realizado com sucesso!");
+
+            navigate("/");
+
+        } catch (error) {
+
+            console.error(error);
+
+            alert("E-mail ou senha inválidos.");
+
+        }
+    }
+
     return (
         <main className="login">
 
@@ -9,11 +44,12 @@ function Login() {
 
                 <div className="login-formulario">
 
-                    <h2>Entre na sua conta</h2>
+                    <h2>Bem-vindo de volta!</h2>
 
-                    <form>
+                    <form onSubmit={handleLogin}>
 
                         <div className="campo">
+
                             <label htmlFor="email">
                                 E-mail
                             </label>
@@ -21,11 +57,18 @@ function Login() {
                             <input
                                 type="email"
                                 id="email"
+                                value={email}
+                                onChange={(event) =>
+                                    setEmail(event.target.value)
+                                }
                                 placeholder="Digite seu e-mail"
+                                required
                             />
+
                         </div>
 
                         <div className="campo">
+
                             <label htmlFor="senha">
                                 Senha
                             </label>
@@ -33,8 +76,14 @@ function Login() {
                             <input
                                 type="password"
                                 id="senha"
+                                value={senha}
+                                onChange={(event) =>
+                                    setSenha(event.target.value)
+                                }
                                 placeholder="Digite sua senha"
+                                required
                             />
+
                         </div>
 
                         <div className="opcoes-login">
