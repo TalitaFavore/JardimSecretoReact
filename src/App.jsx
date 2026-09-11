@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
+import CadastroTipo from "./pages/CadastroTipo";
+import Tipos from "./pages/Tipos";
+import AlterarTipos from "./pages/AlterarTipos";
 
 function App() {
   return (
@@ -11,7 +14,24 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/home" element={<Home />} />
+        <Route
+        path="/cadastro-tipo"
+        element={<CadastroTipo />}
+      />
+
+      <Route
+        path="/tipos"
+        element={<Tipos />}
+      />
+
+      <Route
+        path="/alterar-tipo/:id"
+        element={<AlterarTipos />}
+      />
+      
       </Routes>
+
+      
     </BrowserRouter>
   );
 }

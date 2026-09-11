@@ -3,9 +3,8 @@ import { Link, useNavigate } from "react-router";
 
 import api from "../services/api";
 
-import "./Login.css";
+import "./Auth.css";
 
-+
 function Cadastro() {
 
   const [email, setEmail] = useState("");
@@ -18,25 +17,22 @@ function Cadastro() {
 
     event.preventDefault();
 
-    // Verifica se as senhas são iguais
     if (senha !== confirmarSenha) {
       alert("As senhas não são iguais.");
       return;
     }
 
     try {
-      // Envia os dados para o backend
-      const response = await api.post("/usuarios", {
+      const response = await api.post("/users/register", {
         email: email,
-        senha: senha
+        password: senha
       });
 
       console.log(response.data);
 
       alert("Cadastro realizado com sucesso!");
 
-      // Depois do cadastro, vai para o login
-      navigate("/login");
+      navigate("/");
 
     } catch (error) {
 
@@ -143,11 +139,8 @@ function Cadastro() {
             </Link>
 
           </p>
-
         </div>
-
       </div>
-
     </main>
   );
 }

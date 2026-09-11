@@ -1,0 +1,93 @@
+.cadastro-tipo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px;
+
+    background-color: #d9e2d5;
+}
+
+.cadastro-tipo-container {
+    width: 400px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cadastro-tipo-container h2 {
+    color: #4a5d23;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+.cadastro-tipo-container p {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.campo label {
+    font-weight: bold;
+
+    color: #333;
+}
+
+.campo input {
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #4a5d23;
+}
+
+.botao-cadastrar {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #4a5d23;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-cadastrar:hover {
+    background-color: #8daa81;
+}
