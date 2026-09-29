@@ -1,0 +1,89 @@
+.cadastro-planta {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #d9e2d5;
+}
+
+.cadastro-planta-container {
+    width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cadastro-planta-container h2 {
+    color: #4a5d23;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cadastro-planta-container > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #333;
+}
+
+.campo input,
+.campo select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #4a5d23;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.botao-cancelar,
+.botao-cadastrar {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-cancelar {
+    background-color: #ddd;
+    color: #333;
+}
+
+.botao-cancelar:hover {
+    background-color: #bbb;
+}
+
+.botao-cadastrar {
+    background-color: #4a5d23;
+    color: white;
+}
+
+.botao-cadastrar:hover {
+    background-color: #8daa81;
+}

@@ -5,6 +5,10 @@ import Cadastro from "./pages/Cadastro";
 import CadastroTipo from "./pages/CadastroTipo";
 import Tipos from "./pages/Tipos";
 import AlterarTipos from "./pages/AlterarTipos";
+import Pesquisa from "./pages/Pesquisa";
+import CadastroPlanta from "./pages/CadastroPlantas";
+import Plantas from "./pages/Plantas";
+import AlterarPlanta from "./pages/AlterarPlantas";
 
 function App() {
   return (
@@ -14,24 +18,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/home" element={<Home />} />
-        <Route
-        path="/cadastro-tipo"
-        element={<CadastroTipo />}
-      />
-
-      <Route
-        path="/tipos"
-        element={<Tipos />}
-      />
-
-      <Route
-        path="/alterar-tipo/:id"
-        element={<AlterarTipos />}
-      />
-      
+        <Route path="/cadastro-tipo" element={<CadastroTipo />} />
+        <Route path="/tipos" element={<Tipos />} />
+        <Route path="/alterar-tipo/:id" element={<AlterarTipos />} />
+        <Route path="/pesquisa" element={<Pesquisa />} />
+        <Route path="/cadastro-planta" element={<CadastroPlanta />} />
+        <Route path="/plantas" element={<Plantas />} />
+        <Route path="/alterar-planta/:id" element={<AlterarPlanta />} />
       </Routes>
-
-      
     </BrowserRouter>
   );
 }

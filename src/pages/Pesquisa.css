@@ -1,0 +1,125 @@
+.pesquisa {
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #d9e2d5;
+}
+
+.pesquisa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pesquisa-container h2 {
+    text-align: center;
+    color: #4a5d23;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Barra de pesquisa */
+
+.barra-pesquisa {
+    width: 70%;
+    margin: 0 auto 50px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.barra-pesquisa input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    font-size: 1rem;
+}
+
+.barra-pesquisa span {
+    font-size: 1.3rem;
+}
+
+/* Lista de plantas */
+
+.lista-plantas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* Card */
+
+.card-planta {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.card-planta:hover {
+    transform: translateY(-5px);
+}
+
+.card-planta img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.info-planta {
+    padding: 20px;
+}
+
+.info-planta h3 {
+    color: #4a5d23;
+    margin-bottom: 10px;
+}
+
+.info-planta p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Mensagens */
+
+.mensagem {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .pesquisa {
+        padding: 30px 20px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+    }
+
+    .lista-plantas {
+        grid-template-columns: 1fr;
+    }
+
+}
