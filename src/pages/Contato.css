@@ -1,0 +1,154 @@
+.contato {
+  min-height: 100vh;
+  padding: 60px;
+  background-color: #D9E2D5;
+}
+
+/* Cabeçalho */
+
+.contato-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contato-header h1 {
+  color: #4A5D23;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contato-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Conteúdo */
+
+.contato-conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Informações */
+
+.contato-info {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.contato-imagem img {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #8DAA81;
+  border-radius: 15px;
+
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.contato-info h2 {
+  color: #4A5D23;
+  margin-bottom: 15px;
+}
+
+.contato-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.informacoes {
+  margin-top: 25px;
+}
+
+.informacoes p {
+  margin-bottom: 12px;
+}
+
+/* Formulário */
+
+.contato-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.contato-form h2 {
+  color: #4A5D23;
+  margin-bottom: 25px;
+}
+
+.contato-form label {
+  display: block;
+  margin-bottom: 7px;
+  color: #4A5D23;
+  font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 12px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  resize: vertical;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: #8DAA81;
+}
+
+.contato-form button {
+  width: 100%;
+
+  padding: 14px;
+
+  background-color: #8DAA81;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.contato-form button:hover {
+  background-color: #4A5D23;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+  .contato {
+    padding: 30px 20px;
+  }
+
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+}
