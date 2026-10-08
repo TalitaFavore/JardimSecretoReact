@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router";
 import "./Hero.css";
 
 function Hero() {
+
+  const navigate = useNavigate();
+  
   return (
     <section className="hero">
 
@@ -12,7 +16,9 @@ function Hero() {
           seu espaço em um cantinho mais verde.
         </p>
 
-        <button>Conheça nossas plantas</button>
+        <button onClick={() => navigate("/pesquisa")}>
+          Conheça nossas plantas
+        </button>
       </div>
 
       <div className="hero-imagem">

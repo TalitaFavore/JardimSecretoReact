@@ -16,10 +16,10 @@ function Footer() {
 
         <h3>Links</h3>
 
-        <a href="#">Início</a>
+        <a href="/home">Início</a>
         <a href="#">Cactos</a>
         <a href="#">Suculentas</a>
-        <a href="#">Contato</a>
+        <a href="/contato">Contato</a>
 
       </div>
 
@@ -28,7 +28,7 @@ function Footer() {
         <h3>Contato</h3>
 
         <p>contato@jardimsecreto.com</p>
-        <p>(17) 99999-9999</p>
+        <p>(17) 99647-1935</p>
 
       </div>
 
