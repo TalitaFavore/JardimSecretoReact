@@ -10,6 +10,7 @@ import CadastroPlanta from "./pages/CadastroPlantas";
 import Plantas from "./pages/Plantas";
 import AlterarPlanta from "./pages/AlterarPlantas";
 import Suculentas from "./pages/Suculentas";
+import Cactos from "./pages/Cactos";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/plantas" element={<Plantas />} />
         <Route path="/alterar-planta/:id" element={<AlterarPlanta />} />
         <Route path="/suculentas" element={<Suculentas />}/>
+        <Route path="/cactos" element={<Cactos />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,206 @@
+.cactos {
+    min-height: 100vh;
+    padding: 60px 50px;
+    background-color: #d9e2d5;
+}
+
+.cactos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+.cactos-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cactos-subtitulo {
+    color: #8daa81;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cactos-header h2 {
+    color: #4a5d23;
+    font-size: 2.5rem;
+    margin: 10px 0 15px;
+}
+
+.cactos-header p {
+    max-width: 600px;
+    margin: 0 auto;
+
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Lista */
+
+.lista-cactos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* Card */
+
+.card-cacto {
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-cacto:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+/* Imagem */
+
+.imagem-cacto {
+    position: relative;
+}
+
+.imagem-cacto img {
+    width: 100%;
+    height: 230px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* Categoria */
+
+.categoria-cacto {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 7px 13px;
+
+    background-color: #4a5d23;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Informações */
+
+.info-cacto {
+    padding: 22px;
+}
+
+.info-cacto h3 {
+    color: #4a5d23;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 10px;
+}
+
+.descricao-cacto {
+    color: #777;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+/* Rodapé do card */
+
+.rodape-cacto {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.preco-cacto {
+    color: #4a5d23;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+}
+
+.rodape-cacto button {
+    padding: 9px 14px;
+
+    background-color: #8daa81;
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.rodape-cacto button:hover {
+    background-color: #4a5d23;
+}
+
+/* Mensagens */
+
+.mensagem {
+    text-align: center;
+
+    padding: 50px;
+
+    color: #666;
+
+    font-size: 1.1rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+    .lista-cactos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cactos {
+        padding: 40px 20px;
+    }
+
+    .cactos-header h2 {
+        font-size: 2rem;
+    }
+
+    .lista-cactos {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -39,7 +39,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#">Cactos</a>
+            <a href="/cactos">Cactos</a>
           </li>
 
           <li>
